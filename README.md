@@ -1,2 +1,2 @@
 # tyam-vm.github.io
-### basic website made for CSE326 class project
+### basic website made for CHE110 class project
