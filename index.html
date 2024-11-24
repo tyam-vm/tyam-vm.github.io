@@ -2,65 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flashcards</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSense - Smart Energy and Environmental Impact Hub</title>
 </head>
-<body>
-    <section class="Quiz-area">
-        
-        <header class="title">
-            <h1>Smart Energy Hubs in India</h1>
-        </header>
-        <div class="cards-container">
-            <div class="card">
-                <div class="front">Puga Geothermal Energy Project, Ladakh</div>
-                <div class="back">India's first geothermal power plant, located in Puga Valley, Ladakh. Operations by ONGC.</div>
+<body style="font-family: Arial, sans-serif; color: #333; background-color: #f4f4f9; margin: 0; padding: 0; overflow-x: hidden;">
+
+    <!-- Header with animated text -->
+    <header style="background-color: #4CAF50; color: #fff; padding: 1rem; text-align: center;">
+        <h1 style="animation: fadeIn 2s;">GreenSense</h1>
+        <p style="font-size: 1.2rem; animation: slideIn 2s;">Your Hub for Smart Energy Management & Environmental Chemistry</p>
+    </header>
+
+    <!-- Navigation Bar with hover animation -->
+    <nav style="display: flex; justify-content: center; background-color: #333; padding: 0.5rem;">
+        <a href="#solutions" style="color: white; margin: 0 1rem; text-decoration: none; transition: color 0.3s;">Smart Energy Solutions</a>
+        <a href="#calculator" style="color: white; margin: 0 1rem; text-decoration: none; transition: color 0.3s;">Energy Calculator</a>
+        <a href="#blog" style="color: white; margin: 0 1rem; text-decoration: none; transition: color 0.3s;">Environmental Blog</a>
+        <a href="#tips" style="color: white; margin: 0 1rem; text-decoration: none; transition: color 0.3s;">Smart Tips</a>
+        <a href="flashc.html" style="color: white; margin: 0 1rem; text-decoration: none; transition: color 0.3s;">FlashCards</a>
+    </nav>
+
+    <style>
+        /* Animations */
+        @keyframes fadeIn {,
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Flashcard effect */
+        .flashcard {
+            width: 100%;
+            max-width: 250px;
+            padding: 1rem;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            margin: 1rem;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .flashcard:hover {
+            transform: scale(1.1);
+            background-color: #f0f8f0;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+
+    <!-- Smart Energy Solutions Section with Flashcards -->
+    <section id="solutions" style="padding: 2rem;">
+        <h2>Smart Energy Solutions</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="flashcard tooltip">
+                <strong>Renewable Energy</strong>
+                <p>Solar, Wind, Geothermal</p>
+                <span class="tooltiptext">Clean, sustainable energy sources.</span>
             </div>
-    
-            <div class="card">  
-                <div class="front">Bhadla Solar Park, Rajasthan</div>
-                <div class="back">One of the world's largest solar parks with a capacity of 2.25 GW, a joint effort by RSPDCL, Saurya Urja, and Adani.</div>
+            <div class="flashcard tooltip">
+                <strong>Energy Storage</strong>
+                <p>Lithium-ion Batteries</p>
+                <span class="tooltiptext">Efficient energy retention for long-term use.</span>
             </div>
-    
-            <div class="card">
-                <div class="front">Jaisalmer Wind Park, Rajasthan</div>
-                <div class="back">India's second-largest onshore wind project, developed by Suzlon Energy with a budget of Rs 350.05 crore.</div>
+            <div class="flashcard tooltip">
+                <strong>Smart Grids</strong>
+                <p>Dynamic, Efficient Networks</p>
+                <span class="tooltiptext">Improves power distribution and reduces waste.</span>
             </div>
-    
-            <div class="card">
-                <div class="front">Rewa Solar Project, Madhya Pradesh</div>
-                <div class="back">A 750 MW capacity solar project developed by Rewa Ultra Mega Solar Limited. Supplies power to Indian Railways.</div>
-            </div>
-    
-            <div class="card">
-                <div class="front">Brahmanvel Wind Farm, Maharashtra</div>
-                <div class="back">Wind farm with a capacity of 528 MW, developed by Parakh Agro Industries, located in Dhule.</div>
-            </div>
-    
-            <div class="card">
-                <div class="front">Gobar-Dhan Bio-CNG Plant, Indore</div>
-                <div class="back">Asia's largest Bio-CNG plant, producing 17,000 kg CNG daily, inaugurated by PM Modi.</div>
-            </div>
-    
-            <div class="card">
-                <div class="front">Vankusawade Wind Park, Maharashtra</div>
-                <div class="back">570.15 MW capacity, developed by Suzlon Energy, located near Satara.</div>
-            </div>
-    
-            <div class="card">
-                <div class="front">Ramky Enviro Landfill Gas to Bio-CNG Plant, Hyderabad</div>
-                <div class="back">World's first landfill gas to compressed biogas plant with a capacity of 755 Nm³/hr, developed by Ramky Enviro Engineers Limited.</div>
-            </div>
-    
-            <div class="card">
-                <div class="front">Shakti Sthala Solar Project, Karnataka</div>
-                <div class="back">World's largest solar park, with a capacity of 2,000 MW, spanning 13,000 acres.</div>
-            </div>
-   
         </div>
     </section>
-    
+
+    <!-- Energy Calculator with Animation and Subcategories -->
+    <section id="calculator" style="padding: 2rem; background-color: #e7f3e7;">
+        <h2>Energy Usage Calculator</h2>
+        <p>Enter your daily energy usage to calculate your estimated carbon footprint:</p>
+        
+        <label for="energyUsage" style="display: block; margin-bottom: 0.5rem;">Daily Energy Usage (kWh):</label>
+        <input type="number" id="energyUsage" style="padding: 0.5rem; width: 100px;" />
+        <button onclick="calculateFootprint()" style="padding: 0.5rem; background-color: #4CAF50; color: #fff; border: none;">Calculate</button>
+        
+        <p id="result" style="margin-top: 1rem;"></p>
+        
+        <script>
+            function calculateFootprint() {
+                const usage = document.getElementById('energyUsage').value;
+                const footprint = usage * 0.4; // Sample calculation
+                document.getElementById('result').innerHTML = `Your estimated carbon footprint is ${footprint.toFixed(2)} kg CO₂ per day.`;
+            }
+        </script>
+    </section>
+
+    <!-- Environmental Blog Section with Animated Cards -->
+    <section id="blog" style="padding: 2rem;">
+        <h2>Environmental Chemistry Blog</h2>
+        <div style="display: flex; justify-content: space-around;">
+            <div class="flashcard">
+                <h3>Greenhouse Gases</h3>
+                <p>The role of CO₂ and methane in global warming.</p>
+            </div>
+            <div class="flashcard">
+                <h3>Energy Material Chemistry</h3>
+                <p>How materials impact the environment.</p>
+            </div>
+            <div class="flashcard">
+                <h3>Pollution Case Studies</h3>
+                <p>Scientific insights into pollution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Home Tips Section with Hover Effect -->
+    <section id="tips" style="padding: 2rem; background-color: #e7f3e7;">
+        <h2>Smart Home and Office Tips</h2>
+        <ul>
+            <li style="transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Install smart thermostats to control heating efficiently.</li>
+            <li style="transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Use LED lighting to reduce energy consumption.</li>
+            <li style="transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Improve insulation to save energy.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 1rem; text-align: center;">
+        <p>&copy; 2024 Made by Devansh & Guntas</p>
+    </footer>
+
 </body>
 </html>
