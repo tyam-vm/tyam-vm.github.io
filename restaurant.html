@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dashboard - Food Donation</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/dashboard.js" defer type="module"></script>
+</head>
+<body>
+    <!-- Main Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Restaurant Dashboard</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><button id="logout-btn" class="logout-btn">Logout</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Food Listing Section -->
+            <section class="food-listing">
+                <div class="section-header">
+                    <h2>Your Food Listings</h2>
+                    <button id="add-food-button" class="btn btn-primary">Add New Food</button>
+                </div>
+                <div id="food-list" class="food-list"></div>
+            </section>
+
+            
+            <!-- Add Food Form Section (hidden by default) -->
+<section class="add-food-form" id="add-food-form-container">
+    <h2>Add New Food</h2>
+    <form id="add-food-form">
+        <label for="food-name">Food Name</label>
+        <input type="text" id="food-name" name="food-name" placeholder="Enter food name" required>
+        
+        <label for="food-quantity">Quantity</label>
+        <input type="number" id="food-quantity" name="food-quantity" placeholder="Enter food quantity" required>
+        
+        
+        
+        <!-- New Fields -->
+        <label for="food-place">Place</label>
+        <input type="text" id="food-place" name="food-place" placeholder="Enter place" required>
+        
+        <label for="food-cooking-time">Cooking TimeStamp</label>
+        <input type="datetime-local" id="food-cooking-time" name="food-cooking-time" required>
+        
+        <label for="food-servings">Servings</label>
+        <input type="number" id="food-servings" name="food-servings" placeholder="Enter number of servings" required>
+        
+        <label for="food-quality">Quality of food</label>
+        <select id="food-quality" name="food-quality" required>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+        
+        <label for="food-longevity">Longevity of food (in hours)</label>
+        <input type="number" id="food-longevity" name="food-longevity" placeholder="Enter food longevity" required>
+
+        <label for="food-description">Description</label>
+        <textarea id="food-description" name="food-description" placeholder="Enter food description" required></textarea>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success">Add Food</button>
+            <button type="button" id="cancel-btn" class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+</section>
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 Food Donation System. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modals/Popups (If any) -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+</body>
+</html>

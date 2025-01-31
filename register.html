@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Food Donation</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="js/auth.js" defer type="module"></script>
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Register</h1>
+        <form id="register-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="role">
+                <option value="restaurant">Restaurant</option>
+                <option value="ngo">NGO</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <button id="google-register">Sign up with Google</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Dashboard</title>
+    <link rel="stylesheet" href="css/ngodash.css">
+    <script src="js/ngo.js" defer type="module"></script>
+</head>
+<body>
+    <div id="ngo-dashboard">
+        <header>
+            <h1>NGO Dashboard</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+        
+        <section id="food-donations">
+            <h2>Food Donations</h2>
+            <ul id="donation-list"></ul>  <!-- ✅ Fixed: Changed from 'food-list' to 'donation-list' -->
+        </section>
+
+        <section id="request-food">
+            <h2>Request Donations</h2>
+            <button id="request-donations-btn">Request Food</button>
+        </section>
+
+        <div id="loading-spinner" style="display:none;">Loading...</div>
+
+        <!-- Modal for Accept/Decline Confirmation -->
+        <div id="donation-modal" class="modal" style="display:none;">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </div>
+</body>
+</html>
